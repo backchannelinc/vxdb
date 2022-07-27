@@ -7,17 +7,17 @@ We can't just import __version__ without installed dependencies
 """
 
 version_info = {}
-with open("mwdblib/__version__.py") as f:
+with open("vxdb/__version__.py") as f:
     exec(f.read(), version_info)
 
 setup(
-    name="mwdblib",
+    name="vxdb",
     version=version_info["__version__"],
     description="MWDB API bindings for Python",
     author="psrok1",
-    packages=["mwdblib", "mwdblib.api", "mwdblib.cli", "mwdblib.cli.formatters"],
-    package_data={"mwdblib": ["py.typed"]},
-    url="https://github.com/CERT-Polska/mwdblib",
+    packages=["vxdb", "vxdb.api", "vxdb.cli", "vxdb.cli.formatters"],
+    package_data={"vxdb": ["py.typed"]},
+    url="https://github.com/backchannelinc/vxdb",
     python_requires=">=3.7",
     install_requires=["requests", "keyring>=18.0.0"],
     extras_require={
@@ -28,7 +28,7 @@ setup(
             "humanize>=0.5.1",
         ]
     },
-    entry_points={"console_scripts": ["mwdb = mwdblib.cli:main [cli]"]},
+    entry_points={"console_scripts": ["vxdb = vxdb.cli:main [cli]"]},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",

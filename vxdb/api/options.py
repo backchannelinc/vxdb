@@ -63,7 +63,7 @@ class APIClientOptions:
 
     - built-in defaults accessible via class properties e.g.
       ``APIClientOptions.api_url``
-    - values from ``~/.mwdb`` configuration file
+    - values from ``~/.vxdb`` configuration file
     - values passed as an arguments to the ``APIClientOptions`` constructor
 
     Configuration may depend on ``api_url`` value, so remember to set it if you want to
@@ -71,7 +71,7 @@ class APIClientOptions:
     """
 
     # Register fields and defaults
-    api_url = OptionsField("https://mwdb.cert.pl/api/")
+    api_url = OptionsField("https://virus.exchange/api/")
     api_key = OptionsField(value_type=str)
     username = OptionsField(value_type=str)
     password = OptionsField(value_type=str)
@@ -107,7 +107,7 @@ class APIClientOptions:
 
     def __init__(
         self,
-        config_path: Optional[pathlib.Path] = (pathlib.Path.home() / ".mwdb"),
+        config_path: Optional[pathlib.Path] = (pathlib.Path.home() / ".vxdb"),
         **api_options: Any,
     ) -> None:
         self.config_parser: configparser.ConfigParser = configparser.ConfigParser()
