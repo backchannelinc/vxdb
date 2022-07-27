@@ -1,14 +1,10 @@
 # vxdb
 
-## [Installation ⚙️](#getting-started) | [Docs 📚](https://mwdblib.readthedocs.io/en/latest/) | [Guide 📕](https://mwdb.readthedocs.io/en/latest/user-guide/8-REST-and-mwdblib.html)
-
----
-
 API bindings for [virus.exchange](https://virus.exchange), which is [VX Underground](https://www.vx-underground.org/)'s malware repository based on [mwdb.cert.pl](https://mwdb.cert.pl).
 
 Latest version requires Python >= 3.7.
 
-## Getting started
+## Installation
 
 ```console
 $ pip install vxdb
@@ -18,6 +14,16 @@ or with CLI
 $ pip install vxdb[cli]
 $ vxdb version
 ```
+
+Further help with Installation can be found on MWDB:
+
+* [MWDB Installation](#getting-started)
+* [MWDB Docs](https://mwdblib.readthedocs.io/en/latest/)
+* [MWDB Guide](https://mwdb.readthedocs.io/en/latest/user-guide/8-REST-and-mwdblib.html)
+
+---
+
+## Getting started
 
 The main interface is the VXDB object that provides various methods to interact with virus.exchange.
 
@@ -43,7 +49,7 @@ Password:
 ```console
 $ vxdb --help
 
-Usage: mwdb [OPTIONS] COMMAND [ARGS]...
+Usage: vxdb [OPTIONS] COMMAND [ARGS]...
 
   VXDB Core API client
 
