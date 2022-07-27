@@ -1,5 +1,5 @@
 import unittest
-from mwdblib import config_dhash
+from vxdb import config_dhash
 
 
 class TestPublicApi(unittest.TestCase):

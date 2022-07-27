@@ -6,9 +6,9 @@ class TestPublicApi(unittest.TestCase):
         """
         This imports are a part of the public API and should never be removed
         """
-        from mwdblib import MWDB  # noqa
-        from mwdblib import APIClient # noqa
-        from mwdblib import MWDBFile  # noqa
-        from mwdblib import MWDBObject  # noqa
-        from mwdblib import MWDBConfig  # noqa
-        from mwdblib import MWDBBlob  # noqa
+        from vxdb import MWDB  # noqa
+        from vxdb import APIClient # noqa
+        from vxdb import MWDBFile  # noqa
+        from vxdb import MWDBObject  # noqa
+        from vxdb import MWDBConfig  # noqa
+        from vxdb import MWDBBlob  # noqa

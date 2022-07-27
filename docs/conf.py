@@ -15,7 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath('..'))
 
-from mwdblib import __version__  # noqa: E402
+from vxdb import __version__  # noqa: E402
 
 # -- Project information -----------------------------------------------------
 
