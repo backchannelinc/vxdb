@@ -17,7 +17,7 @@ $ vxdb version
 
 Further help with Installation can be found on MWDB:
 
-* [MWDB Installation](#getting-started)
+* [MWDB Installation](https://github.com/CERT-Polska/mwdblib#getting-started)
 * [MWDB Docs](https://mwdblib.readthedocs.io/en/latest/)
 * [MWDB Guide](https://mwdb.readthedocs.io/en/latest/user-guide/8-REST-and-mwdblib.html)
 
