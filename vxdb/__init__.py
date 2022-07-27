@@ -3,13 +3,13 @@ from .api import APIClient, APIClientOptions
 from .blob import MWDBBlob
 from .comment import MWDBComment
 from .config import MWDBConfig
-from .core import MWDB
+from .core import VXDB
 from .file import MWDBFile
 from .object import MWDBObject
 from .util import config_dhash
 
 __all__ = [
-    "MWDB",
+    "VXDB",
     "APIClient",
     "APIClientOptions",
     "MWDBFile",

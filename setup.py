@@ -13,7 +13,7 @@ with open("vxdb/__version__.py") as f:
 setup(
     name="vxdb",
     version=version_info["__version__"],
-    description="MWDB API bindings for Python",
+    description="virus.exchange API bindings for Python, based on MWDB.",
     author="psrok1",
     packages=["vxdb", "vxdb.api", "vxdb.cli", "vxdb.cli.formatters"],
     package_data={"vxdb": ["py.typed"]},

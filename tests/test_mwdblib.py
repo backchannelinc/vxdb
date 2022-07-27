@@ -6,7 +6,7 @@ class TestPublicApi(unittest.TestCase):
         """
         This imports are a part of the public API and should never be removed
         """
-        from vxdb import MWDB  # noqa
+        from vxdb import VXDB  # noqa
         from vxdb import APIClient # noqa
         from vxdb import MWDBFile  # noqa
         from vxdb import MWDBObject  # noqa

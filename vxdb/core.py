@@ -28,7 +28,7 @@ if TYPE_CHECKING:
 MWDBObjectVar = TypeVar("MWDBObjectVar", bound=MWDBObject)
 
 
-class MWDB:
+class VXDB:
     """
     Main object used for communication with MWDB REST API
 
@@ -82,7 +82,7 @@ class MWDB:
 
     .. code-block:: python
 
-       from mwdblib import MWDB
+       from mwdblib import VXDB
 
        mwdb = MWDB()
        mwdb.login("example", "<password>")
@@ -186,7 +186,7 @@ class MWDB:
 
         .. code-block:: python
 
-            from mwdblib import MWDB
+            from mwdblib import VXDB
             from itertools import islice
 
             mwdb = MWDB()
@@ -588,7 +588,7 @@ class MWDB:
 
         .. code-block:: python
 
-            from mwdblib import MWDB
+            from mwdblib import VXDB
 
             # Search for samples tagged as evil and with size less than 100kB
             results = mwdb.search_files("tag:evil AND file.size:[0 TO 100000]")
@@ -656,7 +656,7 @@ class MWDB:
 
         .. code-block:: python
 
-            from mwdblib import MWDB
+            from mwdblib import VXDB
 
             mwdb = MWDB()
 

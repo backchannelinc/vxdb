@@ -1,5 +1,5 @@
 import os
-from vxdb import MWDB
+from vxdb import VXDB
 import unittest
 from itertools import islice
 from tests.request_counter import RequestsCounter

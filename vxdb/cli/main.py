@@ -4,7 +4,7 @@ import click
 from click.globals import get_current_context
 
 from .. import __version__
-from ..core import MWDB
+from ..core import VXDB
 from ..exc import MWDBError, NotAuthenticatedError
 
 
@@ -23,7 +23,7 @@ def pass_mwdb(fn):
         config_path = kwargs.pop("config_path")
         if config_path:
             mwdb_options["config_path"] = config_path
-        mwdb = MWDB(**mwdb_options)
+        mwdb = VXDB(**mwdb_options)
         try:
             return fn(mwdb=mwdb, *args, **kwargs)
         except NotAuthenticatedError:
