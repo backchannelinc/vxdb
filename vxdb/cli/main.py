@@ -49,7 +49,7 @@ def main():
 
 @main.command("version")
 def version():
-    """Prints mwdblib version"""
+    """Prints vxdb version"""
     click.echo(__version__)
 
 

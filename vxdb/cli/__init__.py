@@ -35,9 +35,9 @@ except ImportError as e:
     print(
         """
 [!] It seems that you haven't installed extra dependencies needed by CLI extension.
-    Best way to install them is to use `pip install mwdblib[cli]` command.
+    Best way to install them is to use `pip install vxdb[cli]` command.
     If it doesn't help, let us know and create an issue:
-    https://github.com/CERT-Polska/mwdblib/issues
+    https://github.com/backchannelinc/vxdb/issues
 
     Missing dependency: {}""".format(
             e.name

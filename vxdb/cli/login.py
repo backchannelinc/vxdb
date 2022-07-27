@@ -22,7 +22,7 @@ from .main import main, pass_mwdb
 @pass_mwdb
 @click.pass_context
 def login_command(ctx, mwdb, username, password, via_api_key, api_key):
-    """Store credentials for MWDB authentication"""
+    """Store credentials for VXDB authentication"""
     if via_api_key:
         api_key = click.prompt("Provide your API key token", hide_input=True)
     if api_key is None:
